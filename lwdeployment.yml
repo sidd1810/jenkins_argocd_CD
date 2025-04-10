@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: lwwebflaskdeploy3
+  name: lwwebflaskdeploy3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lwwebflaskdeploy3
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: lwwebflaskdeploy3
+    spec:
+      containers:
+      - image: sidd1810/webtest:v1
+        name: webtest
+        imagePullPolicy: Always
+        
