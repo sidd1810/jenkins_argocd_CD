@@ -12,6 +12,6 @@ spec:
     targetPort: 5000
   selector:
     app: lwwebflaskdeploy3
-  type: NodePort
+  type: LoadBalancer
 status:
   loadBalancer: {}
